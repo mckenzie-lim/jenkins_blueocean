@@ -16,5 +16,14 @@ fi '''
       }
     }
 
+    stage('Stage3') {
+      steps {
+        sh '''for i in `cat /tmp/orsys`; 
+do 
+ls -il; 
+done '''
+      }
+    }
+
   }
 }
